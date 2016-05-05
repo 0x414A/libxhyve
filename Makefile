@@ -80,6 +80,13 @@ CFLAGS += -DVERSION=\"$(GIT_VERSION)\"
 
 TARGET = build/xhyve
 
+INSTALL = /usr/bin/install 
+
+prefix = /usr/local
+binprefix =
+bindir = $(prefix)/bin
+builddir = $(CURDIR)/build
+
 all: $(TARGET) | build
 
 .PHONY: clean all
@@ -88,7 +95,7 @@ all: $(TARGET) | build
 -include $(DEP)
 
 build:
-	@mkdir -p build
+	@mkdir -p $(builddir)
 
 build/%.o: src/%.c
 	@echo cc $<
@@ -104,6 +111,14 @@ $(TARGET).sym: $(OBJ)
 $(TARGET): $(TARGET).sym
 	@echo strip $(notdir $@)
 	$(VERBOSE) $(ENV) $(STRIP) $(TARGET).sym -o $@
+
+.PHONY: install
+install: all
+	$(INSTALL) -C build/xhyve $(bindir)/$(binprefix)/xhyve
+
+.PHONY: uninstall
+uninstall:
+	rm $(bindir)/$(binprefix)/xhyve
 
 clean:
 	@rm -rf build
