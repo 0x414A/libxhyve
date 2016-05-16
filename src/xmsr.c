@@ -33,7 +33,7 @@
 #include <xhyve/support/misc.h>
 #include <xhyve/support/specialreg.h>
 #include <xhyve/vmm/vmm_api.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/xmsr.h>
 
 int

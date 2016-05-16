@@ -36,7 +36,7 @@
 #include <xhyve/support/md5.h>
 #include <xhyve/support/uuid.h>
 #include <xhyve/vmm/vmm_api.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/smbiostbl.h>
 
 #pragma clang diagnostic push

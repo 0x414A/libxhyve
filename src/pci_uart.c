@@ -30,7 +30,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <xhyve/support/misc.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/pci_emul.h>
 #include <xhyve/uart_emul.h>
 

@@ -59,7 +59,7 @@
 #include <errno.h>
 #include <xhyve/support/misc.h>
 #include <xhyve/vmm/vmm_api.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/pci_emul.h>
 #include <xhyve/acpi.h>
 

@@ -38,7 +38,7 @@
 #include <xhyve/support/segments.h>
 #include <xhyve/support/specialreg.h>
 #include <xhyve/vmm/vmm_api.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 
 /*
  * Using 'struct i386tss' is tempting but causes myriad sign extension

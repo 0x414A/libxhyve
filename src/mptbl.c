@@ -37,7 +37,7 @@
 #include <xhyve/support/misc.h>
 #include <xhyve/support/mptable.h>
 #include <xhyve/acpi.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/mptbl.h>
 #include <xhyve/pci_emul.h>
 

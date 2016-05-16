@@ -36,7 +36,7 @@
 #include <xhyve/support/linker_set.h>
 #include <xhyve/vmm/vmm_api.h>
 #include <xhyve/acpi.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/inout.h>
 #include <xhyve/ioapic.h>
 #include <xhyve/mem.h>

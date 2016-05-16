@@ -50,7 +50,7 @@
 #include <xhyve/support/cpuset.h>
 #include <xhyve/vmm/vmm_api.h>
 
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/acpi.h>
 #include <xhyve/inout.h>
 #include <xhyve/dbgport.h>

@@ -45,7 +45,7 @@
 #include <xhyve/support/misc.h>
 #include <xhyve/support/linker_set.h>
 #include <xhyve/support/md5.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/pci_emul.h>
 #include <xhyve/virtio.h>
 #include <xhyve/block_if.h>

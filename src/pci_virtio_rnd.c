@@ -45,7 +45,7 @@
 #include <sys/uio.h>
 #include <xhyve/support/misc.h>
 #include <xhyve/support/linker_set.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/pci_emul.h>
 #include <xhyve/virtio.h>
 

@@ -37,7 +37,7 @@
 #include <xhyve/support/psl.h>
 #include <xhyve/support/segments.h>
 #include <xhyve/vmm/vmm_api.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/inout.h>
 
 SET_DECLARE(inout_port_set, struct inout_port);

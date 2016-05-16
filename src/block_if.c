@@ -44,7 +44,7 @@
 #include <unistd.h>
 
 #include <xhyve/support/atomic.h>
-#include <xhyve/xhyve.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/mevent.h>
 #include <xhyve/block_if.h>
 
