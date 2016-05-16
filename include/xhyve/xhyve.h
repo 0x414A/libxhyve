@@ -29,6 +29,7 @@
 #pragma once
 
 #include <stdint.h>
+#include <xhyve/libxhyve.h>
 #include <xhyve/support/segments.h>
 
 #ifndef CTASSERT /* Allow lint to override */
@@ -71,8 +72,6 @@ vm_inject_ss(int vcpuid, uint32_t errcode)
 {
 	xh_vm_inject_fault(vcpuid, IDT_SS, 1, errcode);
 }
-
-void *paddr_guest2host(uintptr_t addr, size_t len);
 
 void vcpu_set_capabilities(int cpu);
 void vcpu_add(int fromcpu, int newcpu, uint64_t rip);

@@ -177,12 +177,6 @@ xh_vm_inject_fault(int vcpu, int vector, int errcode_valid,
 	assert(error == 0);
 }
 
-void *
-paddr_guest2host(uintptr_t gaddr, size_t len)
-{
-	return (xh_vm_map_gpa(gaddr, len));
-}
-
 int
 fbsdrun_vmexit_on_pause(void)
 {
